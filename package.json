@@ -1,0 +1,20 @@
+{
+    "name": "unity.pandora.database.mobile",
+    "version": "1.0.0",
+    "displayName": "Pandora Mobile Database",
+    "description": "Unity sqlite implementation for mobile database",
+    "unity": "2019.1",
+    "dependencies": {
+    },
+    "keywords": [
+        "sqlite",
+        "pandora",
+        "mobile",
+        "database"
+    ],
+    "author": {
+        "name": "Jose Eduardo De Leon Suarez",
+        "email": "joseleon1903@outlook.com",
+        "url": "https://undefine"
+    }
+}
