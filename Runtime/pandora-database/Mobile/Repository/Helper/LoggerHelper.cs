@@ -17,7 +17,18 @@ namespace Unity.Pandora.Database.Mobile.Repository.Helper
 
         public static void LogConsole(string line)
         {
-            SettingEnviroment();
+             if (Application.platform == RuntimePlatform.Android && AppDatabase.Instance.loggerType != LoggerType.ONLY_CONSOLE)
+            {
+                return;
+            }
+
+            if (Application.platform == RuntimePlatform.WindowsEditor)
+            {
+
+                SettingEnviroment();
+
+            }
+            
             LoggerType typeLog = AppDatabase.Instance.loggerType;
 
             switch (typeLog) {
