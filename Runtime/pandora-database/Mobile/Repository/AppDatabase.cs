@@ -117,6 +117,7 @@ namespace Unity.Pandora.Database.Mobile.Repository {
                 ContextEntity.Initialized();
                 EntityRepository<TEntity> repository = new EntityRepository<TEntity>(ContextEntity, entity, false);
                 repository.Update(entity);
+                success = true;
             }
             catch (SqliteException ex)
             {
